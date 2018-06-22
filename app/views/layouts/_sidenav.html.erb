@@ -1,0 +1,28 @@
+<ul id="slide-out" class="sidenav sidenav-fixed">
+  <li><div class="user-view">
+    <div class="background">
+      <img src="indeva_logo_normal.png">
+    </div>
+    <a href="#user"><img class="circle" src="user.png"></a>
+    <a href="#name"><span class="orange-text name">John Doe</span></a>
+    <a href="#email"><span class="grey-text email">jdandturk@gmail.com</span></a>
+  </div></li>
+  <li>
+    <%= link_to home_index_path do %>
+      <i class="material-icons">home</i>Home
+    <% end %>
+  </li>
+  <li><div class="divider"></div></li>
+  <li><a class="subheader">Dashboard</a></li>
+  <li>
+    <%= link_to books_path do %>
+      <i class="material-icons">book</i>Books
+    <% end %>
+  </li>
+  <li>
+    <%= link_to people_path do %>
+      <i class="material-icons">people</i>People
+    <% end %>
+  </li>
+</ul>
+  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
